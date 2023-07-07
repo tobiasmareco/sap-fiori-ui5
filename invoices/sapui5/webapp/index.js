@@ -1,5 +1,13 @@
-sap.ui.define([
-    //Here dependencys
-], function () {
-    alert('SAPUI5 esta listo.');
-});
+sap.ui.define(
+    [
+        "sap/m/Text",
+        /**
+         * @param {tyoeof sap.m.Text} Text
+         */
+    ],
+    function (Text) {
+        new Text({
+            text: "Hello World from sap.m.text from control",
+        }).placeAt("root");
+    }
+);
