@@ -1,13 +1,16 @@
 sap.ui.define(
     [
-        "sap/m/Text",
+        "sap/ui/core/mvc/XMLView"
         /**
-         * @param {tyoeof sap.m.Text} Text
+         * @param {typeof sap.ui.core.mvc.XMLView} XMLView
          */
     ],
-    function (Text) {
-        new Text({
-            text: "Hello World from sap.m.text from control",
-        }).placeAt("root");
+    function (XMLView) {
+        'use strict';
+        XMLView.create({
+            viewName: "invoices.sapui5.view.App"
+        }).then(function (oView) {
+            oView.placeAt("root")
+        })
     }
 );
