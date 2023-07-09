@@ -7,4 +7,10 @@
 		text="SayHello"
 		press=".onSayHelloButton"
 	/>
+	<Input 
+	value="{/recipient/name}" 
+	description="Hello {/recipient/name}"
+	width="60%"
+	valueLiveUpdate="true"
+	/>
 </mvc:View>
