@@ -11,11 +11,11 @@ sap.ui.define([
 		UIComponent, Models, ResourceModel) {
 		return UIComponent.extend("invoices.sapui5.Component", {
 			metadata: {
-				rootView: {
-					viewName: "invoices.sapui5.view.App",
-					type: "XML",
-					async: true,
-					id: "app"
+				"rootView": {
+					"viewName": "invoices.sapui5.view.App",
+					"type": "XML",
+					"async": true,
+					"id": "app"
 				}
 			},
 			init: function () {

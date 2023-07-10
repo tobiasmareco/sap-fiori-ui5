@@ -1,16 +1,17 @@
 sap.ui.define(
     [
-        "sap/ui/core/mvc/XMLView"
+        "sap/ui/core/ComponentContainer"
     ],
     /**
-     * @param {typeof sap.ui.core.mvc.XMLView} XMLView 
+     * @param {typeof sap.ui.core.ComponentContainer} ComponentContainer
      */
-    function (XMLView) {
-        'use strict';
-        XMLView.create({
-            viewName: "invoices.sapui5.view.App"
-        }).then(function (oView) {
-            oView.placeAt("root")
-        })
+    function (ComponentContainer) {
+        new ComponentContainer({
+            name:"invoices.sapui5",
+            settings:{
+                id:"sapui5"
+            },
+            async: true,
+        }).placeAt("root")
     }
 );
