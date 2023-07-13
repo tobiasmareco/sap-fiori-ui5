@@ -8,16 +8,20 @@
 		<pages>
 			<Page title="{i18n>appTitle}">
 				<content>
-					<Button
-						text="{i18n>sayHelloButton}"
-						press=".onSayHelloButton"
-					/>
-					<Input
-						value="{/recipient/name}"
-						description="Hello {/recipient/name}"
-						width="60%"
-						valueLiveUpdate="true"
-					/>
+					<Panel headerText="{i18n>helloPanel}">
+						<content>
+							<Button
+								text="{i18n>sayHelloButton}"
+								press=".onSayHelloButton"
+							/>
+							<Input
+								value="{/recipient/name}"
+								description="Hello {/recipient/name}"
+								width="60%"
+								valueLiveUpdate="true"
+							/>
+						</content>
+					</Panel>
 				</content>
 			</Page>
 		</pages>
