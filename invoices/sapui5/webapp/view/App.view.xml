@@ -23,7 +23,7 @@
 									width="60%"
 									valueLiveUpdate="true"
 								/>
-								<Text text="Hello {/recipient/name}" class="sapUiSmallMargin"/>
+								<Text text="Hello {/recipient/name}" class="sapUiSmallMargin bold sapThemeHighlight-asColor"/>
 							</content>
 						</Panel>
 					</content>
