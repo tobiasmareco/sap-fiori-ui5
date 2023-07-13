@@ -2,15 +2,24 @@
 	controllerName="invoices.sapui5.controller.App"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
+	displayBlock="true"
 >
-	<Button
-		text="{i18n>sayHelloButton}"
-		press=".onSayHelloButton"
-	/>
-	<Input 
-	value="{/recipient/name}" 
-	description="Hello {/recipient/name}"
-	width="60%"
-	valueLiveUpdate="true"
-	/>
+	<App>
+		<pages>
+			<Page title="{i18n>appTitle}">
+				<content>
+					<Button
+						text="{i18n>sayHelloButton}"
+						press=".onSayHelloButton"
+					/>
+					<Input
+						value="{/recipient/name}"
+						description="Hello {/recipient/name}"
+						width="60%"
+						valueLiveUpdate="true"
+					/>
+				</content>
+			</Page>
+		</pages>
+	</App>
 </mvc:View>
