@@ -4,26 +4,28 @@
 	xmlns="sap.m"
 	displayBlock="true"
 >
-	<App>
-		<pages>
-			<Page title="{i18n>appTitle}">
-				<content>
-					<Panel headerText="{i18n>helloPanel}">
-						<content>
-							<Button
-								text="{i18n>sayHelloButton}"
-								press=".onSayHelloButton"
-							/>
-							<Input
-								value="{/recipient/name}"
-								description="Hello {/recipient/name}"
-								width="60%"
-								valueLiveUpdate="true"
-							/>
-						</content>
-					</Panel>
-				</content>
-			</Page>
-		</pages>
-	</App>
+	<Shell>
+		<App>
+			<pages>
+				<Page title="{i18n>appTitle}">
+					<content>
+						<Panel headerText="{i18n>helloPanel}">
+							<content>
+								<Button
+									text="{i18n>sayHelloButton}"
+									press=".onSayHelloButton"
+								/>
+								<Input
+									value="{/recipient/name}"
+									description="Hello {/recipient/name}"
+									width="60%"
+									valueLiveUpdate="true"
+								/>
+							</content>
+						</Panel>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
 </mvc:View>
