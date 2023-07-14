@@ -2,7 +2,7 @@
 	xmlns="sap.m"
 	controllerName="invoices.sapui5.controller.HelloPanel"
 	xmlns:mvc="sap.ui.core.mvc"
-    xmlns:core="sap.ui.core"
+	xmlns:core="sap.ui.core"
 	displayBlock="true"
 >
 	<Panel
@@ -11,6 +11,11 @@
 		width="auto"
 	>
 		<content>
+			<Button
+				text="{i18n>helloDialogButton}"
+				press=".onOpenDialog"
+				class="sapUiSmallMarginEnd"
+			/>
 			<Button
 				text="{i18n>sayHelloButton}"
 				press=".onSayHelloButton"
@@ -27,5 +32,8 @@
 			/>
 		</content>
 	</Panel>
-    <core:Fragment fragmentName="invoices.sapui5.view.Form01" type="XML"/>
+	<core:Fragment
+		fragmentName="invoices.sapui5.view.Form01"
+		type="XML"
+	/>
 </mvc:View>
