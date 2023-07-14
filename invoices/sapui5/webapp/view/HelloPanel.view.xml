@@ -1,0 +1,29 @@
+<mvc:View
+	xmlns="sap.m"
+	controllerName="invoices.sapui5.controller.HelloPanel"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true"
+>
+	<Panel
+		headerText="{i18n>helloPanel}"
+		class="sapUiResponsiveMargin"
+		width="auto"
+	>
+		<content>
+			<Button
+				text="{i18n>sayHelloButton}"
+				press=".onSayHelloButton"
+				class="sapUiSmallMarginEnd"
+			/>
+			<Input
+				value="{/recipient/name}"
+				width="60%"
+				valueLiveUpdate="true"
+			/>
+			<Text
+				text="Hello {/recipient/name}"
+				class="sapUiSmallMargin bold sapThemeHighlight-asColor"
+			/>
+		</content>
+	</Panel>
+</mvc:View>
